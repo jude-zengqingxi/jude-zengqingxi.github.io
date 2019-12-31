@@ -238,7 +238,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Anaconda-3-5-2-下安装-tensorflow-2-0"><a href="#Anaconda-3-5-2-下安装-tensorflow-2-0" class="headerlink" title="Anaconda 3.5.2 下安装 tensorflow 2.0"></a>Anaconda 3.5.2 下安装 tensorflow 2.0</h1><h2 id="1-安装Anaconda"><a href="#1-安装Anaconda" class="headerlink" title="1.安装Anaconda"></a>1.安装Anaconda</h2><h5 id="Anaconda-是一个基于-Python-的数据处理和科学计算平台，它已经内置了许多非常有用的第三方库，装上Anaconda，就相当于把-Python-和一些如-Numpy、Pandas、Scrip、Matplotlib-等常用的库自动安装好了，使得安装比常规-Python-安装要容易。"><a href="#Anaconda-是一个基于-Python-的数据处理和科学计算平台，它已经内置了许多非常有用的第三方库，装上Anaconda，就相当于把-Python-和一些如-Numpy、Pandas、Scrip、Matplotlib-等常用的库自动安装好了，使得安装比常规-Python-安装要容易。" class="headerlink" title="Anaconda 是一个基于 Python 的数据处理和科学计算平台，它已经内置了许多非常有用的第三方库，装上Anaconda，就相当于把 Python 和一些如 Numpy、Pandas、Scrip、Matplotlib 等常用的库自动安装好了，使得安装比常规 Python 安装要容易。"></a>Anaconda 是一个基于 Python 的数据处理和科学计算平台，它已经内置了许多非常有用的第三方库，装上Anaconda，就相当于把 Python 和一些如 Numpy、Pandas、Scrip、Matplotlib 等常用的库自动安装好了，使得安装比常规 Python 安装要容易。</h5><pre><code>下载地址：官网下载速度太慢，给大家推荐清华源的下载地址： https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
+特别注意一点此处要勾上，否则之后还要去自己手动添加环境变量 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191216213249315.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0Njc1NTg3,size_16,color_FFFFFF,t_70)</code></pre><h2 id="2-安装tensorflow"><a href="#2-安装tensorflow" class="headerlink" title="2.安装tensorflow"></a>2.安装tensorflow</h2><ol>
+<li>切换下载源，加快下载速度 </li>
+<li>进入windows命令模式，创建tensorflow环境，安装python3.6： conda create –name tensorflow python=3.6</li>
+<li>激活tensflow的tfenv环境： activate  tensorflow</li>
+<li>安装tensorflow:pip install –upgrade –ignore-installed tensorflow<h2 id="3-与pycharm-IDE-关联"><a href="#3-与pycharm-IDE-关联" class="headerlink" title="3.与pycharm IDE 关联"></a>3.与pycharm IDE 关联</h2> 将项目的解释器选为Anaconda下tensorflow 环境中的 python.exe 即可.</li>
+</ol>
+
       
 
       
@@ -246,6 +253,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">tensorflow</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -446,6 +464,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">tensorflow</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
