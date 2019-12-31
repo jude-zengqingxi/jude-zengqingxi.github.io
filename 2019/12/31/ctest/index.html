@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>ctest | 风斩冰华</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.通讯录的功能 1.创建联系人、创建群组、对联系人进行增删减改、对联系人进行查找、对联系人进行排序">
+  <meta name="description" content="##1.通讯录的功能 创建联系人、创建群组、对联系人进行增删减改、对联系人进行查找、对联系人进行排序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ctest">
 <meta property="og:url" content="http://yoursite.com/2019/12/31/ctest/index.html">
 <meta property="og:site_name" content="风斩冰华">
-<meta property="og:description" content="1.通讯录的功能 1.创建联系人、创建群组、对联系人进行增删减改、对联系人进行查找、对联系人进行排序">
+<meta property="og:description" content="##1.通讯录的功能 创建联系人、创建群组、对联系人进行增删减改、对联系人进行查找、对联系人进行排序">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yoursite.com/.com//test.jpg">
 <meta property="article:published_time" content="2019-12-31T07:30:54.000Z">
-<meta property="article:modified_time" content="2019-12-31T07:47:21.397Z">
+<meta property="article:modified_time" content="2019-12-31T07:52:55.492Z">
 <meta property="article:author" content="风斩冰华">
 <meta property="article:tag" content="c language">
 <meta name="twitter:card" content="summary">
@@ -190,10 +190,10 @@
   
 </p></center>
       
-        <p>1.通讯录的功能</p>
-<p>1.创建联系人、创建群组、对联系人进行增删减改、对联系人进行查找、对联系人进行排序<br><img src="/.com//test.jpg" alt></p>
+        <p>##1.通讯录的功能</p>
+<h3 id="创建联系人、创建群组、对联系人进行增删减改、对联系人进行查找、对联系人进行排序"><a href="#创建联系人、创建群组、对联系人进行增删减改、对联系人进行查找、对联系人进行排序" class="headerlink" title="创建联系人、创建群组、对联系人进行增删减改、对联系人进行查找、对联系人进行排序"></a>创建联系人、创建群组、对联系人进行增删减改、对联系人进行查找、对联系人进行排序</h3><p><img src="/.com//test.jpg" alt></p>
 <a id="more"></a>
-<p>2.代码展示</p>
+<p>##2.代码展示</p>
 <p>/*<br>    通讯录管理程序<br>*/<br>#include &lt;stdio.h&gt;<br>#include &lt;stdlib.h&gt;<br>#include &lt;string.h&gt;<br>#include &lt;conio.h&gt;<br>#define N 1000<br>//结构体的定义<br>struct record<br>{<br>    char name[20];  //联系人姓名<br>    char phone[20]; //联系人电话<br>    char adress[40];   //联系人地址<br>    char qunming[25];   //联系人所在群组（默认位置在其他）</p>
 <p>} contact[N];</p>
 <p>int NO=0;       //用于记录联系人的总个数</p>
@@ -530,7 +530,7 @@ return 0;</code></pre><p>}<br>void savegroupfile(char *filename)<br>{<br>    FIL
     }
 }
 fclose(fp1);</code></pre><p>}<br>void savefile()<br>{<br>    int i;<br>    if ((fp=fopen(“联系人.txt”,”w+”))==0)<br>    {<br>        printf(“\n\t\t+_+文件打开失败!\n”);<br>    }<br>    for (i=0; i&lt;NO; i++)<br>    {<br>        if (fwrite(&amp;contact[i],sizeof(struct record),1,fp)!=1)<br>        {<br>            printf(“\n\t\t写入文件错误!\n”);<br>        }<br>        else<br>        {<br>            fputc(10,fp);    // 往文件中写入换行符，让文件中保存的内容更方便查询<br>        }<br>    }<br>    printf(“\n\t\t   已更新文件!\n”);<br>    fclose(fp);<br>}</p>
-<p>3.未解决问题</p>
+<p>##3.未解决问题</p>
 <p>1.查找不能进行模糊查找</p>
 <p>2.群的创建有点乱</p>
 
@@ -764,11 +764,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">c language</a>
+                <a href="javascript:void(0)" class="js-tag color1">tensorflow</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">tensorflow</a>
+                <a href="javascript:void(0)" class="js-tag color1">c language</a>
               </li>
             
             <div class="clearfix"></div>
