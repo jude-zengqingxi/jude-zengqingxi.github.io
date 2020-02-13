@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/12 | 风斩冰华</title>
+  <title>《深度学习入门：python 的理论与实现》 | 风斩冰华</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="风斩冰华">
-<meta property="og:url" content="http://yoursite.com/archives/2019/12/index.html">
+  <meta name="description" content="1234567891011121314151617181920212223242526《深度学习入门：python 的理论与实现》之神经网络的学习总结 一、获取训练数据和测试数据    1. 获取数据的原因：神经网络的特征在于从数据中学习，所谓“从数据中学习”，是指可以由数据自动决定权重和参数的值    2. 区分训练数据和测试数据的原因：为了正确评价自己所构建的神经网络模型的泛化能力，所谓“泛化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《深度学习入门：python 的理论与实现》">
+<meta property="og:url" content="http://yoursite.com/2019/02/13/python%20machinel-earning/index.html">
 <meta property="og:site_name" content="风斩冰华">
+<meta property="og:description" content="1234567891011121314151617181920212223242526《深度学习入门：python 的理论与实现》之神经网络的学习总结 一、获取训练数据和测试数据    1. 获取数据的原因：神经网络的特征在于从数据中学习，所谓“从数据中学习”，是指可以由数据自动决定权重和参数的值    2. 区分训练数据和测试数据的原因：为了正确评价自己所构建的神经网络模型的泛化能力，所谓“泛化">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-02-12T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-02-13T11:14:45.626Z">
 <meta property="article:author" content="风斩冰华">
+<meta property="article:tag" content="DeepLearning">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="风斩冰华" type="application/atom+xml">
@@ -172,201 +177,173 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-python machinel-earning" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+	  
+        
+        
+        <a href="/2019/02/13/python%20machinel-earning/" class="archive-article-date">
+  	<time datetime="2019-02-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-13</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+		
+		<center><p>
+  
+    <h1 class="article-title_code_ant" itemprop="name">
+      《深度学习入门：python 的理论与实现》
+    </h1>
+  
+</p></center>
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">《深度学习入门：python 的理论与实现》之神经网络的学习总结</span><br><span class="line"></span><br><span class="line"> 一、获取训练数据和测试数据</span><br><span class="line">    1. 获取数据的原因：神经网络的特征在于从数据中学习，所谓“从数据中学习”，是指可以由数据自动决定权重和参数的值</span><br><span class="line">    2. 区分训练数据和测试数据的原因：为了正确评价自己所构建的神经网络模型的泛化能力，所谓“泛化能力”指的就是处理未被观察过的数据（不包含在训练数据中</span><br><span class="line">    的数据）的能力，获得泛化能力是机器学习的最终目标。</span><br><span class="line">    3. 仅仅使用一个数据集是无法进行正确的评价一个模型的，而且很可能导致过拟合问题。</span><br><span class="line"></span><br><span class="line"> 二、定义激活函数</span><br><span class="line">    1.激活函数：阶跃函数（感知机使用） 、sigmoid、relu、softmax</span><br><span class="line">    2.激活函数可以说是从感知机通往神经网络的一条通道</span><br><span class="line">    3.神经网络必须使用的激活函数必须是非线性函数，因为使用线性函数的话，加深网络的层数就没有意义了，线性函数的问题在于不管如何加深层数，总是存在与之等效的“无隐藏层的神经网络” 比如 h(x)&#x3D;cx  y(x)&#x3D;h(h(h(x)))的运算对应三层神经网络可以用 y &#x3D; ax其中a&#x3D; c^3 为无隐藏层的神经网络代替。</span><br><span class="line"></span><br><span class="line"> 三、定义损失函数</span><br><span class="line">    1.损失函数存在的意义：简单来说损失函数就是一个用来评价网络模型好坏的一个参考指标。通过损失函数来找到模型的最优权重参数;为了找到使损失函数尽可能小的地方，需要计算参数的导数（梯度），然后以这个导数为指引，逐步更新参数的值，直到最优。</span><br><span class="line">    2.均方误差函数、交叉熵误差函数</span><br><span class="line"></span><br><span class="line"> 四、数值微分+梯度</span><br><span class="line">    1.数值微分：求损失函数某一点的导数（注意考虑偏导数的情况）</span><br><span class="line">    2.梯度：当我们求得损失函数某一点的导数（梯度）时，通过判断导数的正负，结合学习率（可以理解为每次移动的步幅）来移动；结合需求，按需使用梯度下降和梯度上升法。</span><br><span class="line"></span><br><span class="line"> 五、学习算法的构建与实现</span><br><span class="line">    1.步骤： 1 mini-batch</span><br><span class="line">            2 计算梯度</span><br><span class="line">            3 更新参数</span><br><span class="line">            4 重复</span><br></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/31/ctest/" class="archive-article-date">
-  	<time datetime="2019-12-31T07:30:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/31/ctest/">c 语言实现简单的通讯录</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">c language</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">DeepLearning</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/02/13/python%20machinel-earning/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/31/test/" class="archive-article-date">
-  	<time datetime="2019-12-31T07:30:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-31</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/12/30/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/31/test/">c 语言实现简单的测试</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">c language</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/31/imagesize/" class="archive-article-date">
-  	<time datetime="2019-12-31T07:30:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/31/imagesize/">python+opencv 读取图片的大小</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/31/anaconda/" class="archive-article-date">
-  	<time datetime="2019-12-31T04:20:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/31/anaconda/">Anaconda下配置tensorflow</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">tensorflow</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/30/hello-world/" class="archive-article-date">
-  	<time datetime="2019-12-30T08:55:24.258Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/30/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -388,8 +365,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
