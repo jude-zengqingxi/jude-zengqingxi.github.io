@@ -208,8 +208,18 @@
 <hr>
 <p>注意：1.列表没有shape属性,数组有，可以使用np.array(list)转换为数组<br>需要重点注意的是列表list是没有shape属性的，需要将其转换为数组，如下可以有两种表示方式<br>b = [[1,2,3],[4,5,6],[7,8,9]]<br>print(np.shape(b))<br>print(np.array(b).shape)<br> 2.np.dot(x,y)矩阵相乘 而 np.multiply(x,y)数组中的元素对应相乘</p>
 <hr>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">  1. np.multiply()函数</span><br><span class="line"> 	函数作用</span><br><span class="line">   	数组和矩阵对应位置相乘，输出与相乘数组/矩阵的大小一致</span><br><span class="line">  2. np.dot()函数</span><br><span class="line">函数作用</span><br><span class="line">   	对于秩为1的数组，执行对应位置相乘，然后再相加；</span><br><span class="line">   	对于秩不为1的二维数组，执行矩阵乘法运算</span><br><span class="line">  3. 星号（*）乘法运算</span><br><span class="line">函数作用</span><br><span class="line">   	对数组执行对应位置相乘</span><br><span class="line">   	对矩阵执行矩阵乘法运算</span><br></pre></td></tr></table></figure>
-
+<ol>
+<li><p>np.multiply()函数<br>  函数作用</p>
+<p>  数组和矩阵对应位置相乘，输出与相乘数组/矩阵的大小一致    </p>
+</li>
+<li><p>np.dot()函数<br>函数作用</p>
+<p>对于秩为1的数组，执行对应位置相乘，然后再相加；<br>对于秩不为1的二维数组，执行矩阵乘法运算</p>
+</li>
+<li><p>星号（*）乘法运算<br>函数作用</p>
+<p>对数组执行对应位置相乘<br>对矩阵执行矩阵乘法运算</p>
+</li>
+</ol>
+<hr>
 
       
 
@@ -230,17 +240,6 @@
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/notes//" class="article-tag-list-link color1">notes</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
         <p class="article-more-link">
